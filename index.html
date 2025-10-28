@@ -1,20 +1,63 @@
-<!--Tyler Ross, 10/24/2025 -->
+<!--Tyler Ross, 10/20/2025-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <title>CS 490WD Projects</title>
+    <link rel="stylesheet" href="Midterm.css">
   </head>
   <body>
-    <h1>CS 490 WD Projects</h1>
-    <p>Created by: Tyler Ross</p>
+    <header>
+      <h1>CS 490 WD Projects</h1>
+      <p>Created by: Tyler Ross</p>
+      <nav>
+        <b>
+          <a href="index.html">Home</a>
+          &nbsp;|&nbsp;
+          <a href="Week2Assignment/home.html">Parks & Rec</a>
+        </b>
+      </nav>
+    </header>
 
-    <nav>
-      <b>
-        <a href="index.html">Home</a>
-        &nbsp;|&nbsp;
-        <a href="Week2Assignment/home.html">Parks & Rec</a>
-      </b>
-    </nav>
+    <main>
+	  <section id="quote-section">
+		<h2>Motivational Quote</h2>
+		<p id="quote-display">Click the button to see a motivational quote!</p>
+		<button id="new-quote-btn">New Quote</button>
+	  </section>
+      <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Home</h3>
+            <p>My index to access my other web pages/projects.</p>
+            <a href="index.html">View Project</a>
+          </article>
+		  
+		  <article class="project-card">
+            <h3>Parks & Rec</h3>
+            <p>A simple web page showcasing Parks & Recreation content using HTML and CSS.</p>
+            <a href="Week2Assignment/home.html">View Project</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <ul>
+          <li>Email: <a href="mailto:tdr2n4@umsystem.edu">tdr2n4@umsystem.edu</a></li>
+          <li>GitHub: <a href="https://github.com/tyler-ross26" target="_blank">https://github.com/tyler-ross26</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/tyler-ross-tdr/" target="_blank">"https://www.linkedin.com/in/tyler-ross-tdr/</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+		<em>
+			<p>&copy; Tyler Ross, 2025</p>
+		</em>
+    </footer>
+
+    <script src="Midterm.js"></script>
   </body>
 </html>
