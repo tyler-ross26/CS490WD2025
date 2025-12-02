@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SQL Display</title>
+  </head>
+  <body>
+    <p>
+      CREATE TABLE Customers(<br>
+      &nbsp;&nbsp;id INTEGER PRIMARY KEY,<br>
+      &nbsp;&nbsp;name TEXT,<br>
+      &nbsp;&nbsp;membership_level TEXT<br>
+      );<br><br>
+
+      CREATE TABLE Rentals(<br>
+      &nbsp;&nbsp;id INTEGER PRIMARY KEY,<br>
+      &nbsp;&nbsp;customer_id INTEGER,<br>
+      &nbsp;&nbsp;movie_title TEXT,<br>
+      &nbsp;&nbsp;rental_price REAL,<br>
+      &nbsp;&nbsp;FOREIGN KEY (customer_id) REFERENCES Customers(id)<br>
+      );<br><br>
+
+      INSERT INTO Customers(id, name, membership_level) VALUES<br>
+      (1, 'Tyler', 'VIP'),<br>
+      (2, 'Jadyn', 'Standard'),<br>
+      (3, 'Julie', 'Deluxe'),<br>
+      (4, 'David', 'Standard'),<br>
+      (5, 'Isa', 'VIP');<br><br>
+
+      INSERT INTO Rentals(id, customer_id, movie_title, rental_price) VALUES<br>
+      (1, 2, 'Die Hard', 4.99),<br>
+      (2, 5, 'Wicked', 5.99),<br>
+      (3, 3, 'Wicked', 12.99),<br>
+      (4, 1, 'Ghost Busters', 3.99),<br>
+      (5, 4, 'Pirates of the Caribbean: The Black Pearl', 5.99);<br><br>
+
+      SELECT *<br>
+      FROM Customers;<br><br>
+
+      SELECT *<br>
+      FROM Rentals;<br><br>
+
+      SELECT name, membership_level<br>
+      FROM Customers;<br><br>
+
+      SELECT movie_title, rental_price<br>
+      FROM Rentals;<br><br>
+
+      SELECT *<br>
+      FROM Customers, Rentals;
+    </p>
+  </body>
+</html>
