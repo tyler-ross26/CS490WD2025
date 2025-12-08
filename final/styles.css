@@ -101,6 +101,23 @@ section {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+.project {
+  background-color: #ffffff;
+  padding: 1em 1.2em;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 1em;
+}
+
+#projects a {
+	color: #3a6b35;
+	text-decoration: none;
+}
+
+#projects a:hover {
+	color: #8b5e3c;
+}
+
 /* Contact Section */
 #contact p, #contact a {
   text-align: center;
@@ -118,6 +135,78 @@ footer {
   color: #f5f5dc;
   text-align: center;
   padding: 1em;
+}
+
+#darkModeBtn {
+  background-color: #3a6b35;
+  color: #f5f5dc;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+#darkModeBtn:hover {
+  background-color: #8b5e3c;
+  color: #f5f5dc;
+}
+
+/*Dark Mode Styles*/
+
+body.dark-mode #darkModeBtn {
+  background-color: #8b5e3c;
+  color: #f5f5f5;
+}
+
+body.dark-mode #darkModeBtn:hover {
+  background-color: #3a6b35;
+  color: #f5f5f5;
+}
+
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .project {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+body.dark-mode #background li {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+#scrollTopBtn {
+  background-color: #3a6b35;
+  color: #f5f5dc;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+#scrollTopBtn:hover {
+  background-color: #8b5e3c;
+}
+
+/* Dark mode */
+body.dark-mode #scrollTopBtn {
+  background-color: #8b5e3c;
+  color: #f5f5f5;
+}
+
+body.dark-mode #scrollTopBtn:hover {
+  background-color: #3a6b35;
 }
 
 /* Responsive Design */
